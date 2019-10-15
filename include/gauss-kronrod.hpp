@@ -290,7 +290,7 @@ void GaussKronrod<Real>::gauss_kronrod_abscissae()
 {
 	Real delta, epsilon;
 
-	for (int k = 0; k < n_ / 2; ++k)
+	for (int k = 0; 2*k < n_; ++k)
 	{
 		delta = 1;
 		// Newton's method for E_{n+1} :
